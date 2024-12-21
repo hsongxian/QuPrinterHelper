@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="printer_connect_fail">Printer connection failure, please contact customer service</string>
+    <string name="print_success">Print successfully, please take the photo</string>
+    <string name="ok">OK</string>
+    <string name="error">Error:%1$s</string>
+</resources>

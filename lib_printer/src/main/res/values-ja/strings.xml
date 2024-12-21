@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="printer_connect_fail">プリンターの接続に失敗しました。カスタマーサポートに連絡してください</string>
+    <string name="print_success">印刷が成功しました。写真をお早めにお持ち帰りください</string>
+    <string name="ok">OK</string>
+    <string name="error">Error:%1$s</string>
+</resources>

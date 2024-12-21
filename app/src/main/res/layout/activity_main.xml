@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wingyo.ui.MainActivity">
+
+    <ScrollView
+        android:id="@+id/photo"
+        android:layout_width="400px"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px">
+        <LinearLayout
+            android:id="@+id/photoLlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/rgCut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250px"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <RadioButton
+            android:id="@+id/rbCut0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不裁切" />
+
+        <RadioButton
+            android:id="@+id/rbCut1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中间裁切" />
+
+        <RadioButton
+            android:id="@+id/rbCut2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="三等份裁切"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rgCut">
+
+        <Button
+            android:id="@+id/btMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tvPrintNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="1"
+            android:textSize="40px" />
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgOverCoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="@+id/rgCut"
+        app:layout_constraintStart_toEndOf="@+id/rgCut"
+        android:layout_marginLeft="50px">
+
+        <RadioButton
+            android:id="@+id/rbGlossy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="光面" />
+
+        <RadioButton
+            android:id="@+id/rbMatte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="磨砂" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/selectPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择图片"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="50px"
+        app:layout_constraintTop_toBottomOf="@+id/selectPhoto">
+
+        <Button
+            android:id="@+id/dnprx_1_print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="DNP-RX1打印"/>
+        <Button
+            android:id="@+id/dnp_620_print"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="50px"
+            android:layout_height="wrap_content"
+            android:text="DNP-620打印"/>
+        <Button
+            android:id="@+id/dnp_410_print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="DNP-410打印"/>
+        <Button
+            android:id="@+id/citizen_print"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="50px"
+            android:layout_height="wrap_content"
+            android:text="西铁城打印"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px"
+        app:layout_constraintTop_toBottomOf="@+id/llt1">
+
+        <Button
+            android:id="@+id/joy_space_u_826_print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="U826打印"/>
+        <Button
+            android:id="@+id/chengYan525LPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="呈研525L打印"/>
+        <Button
+            android:id="@+id/faGaoPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="法高卡片机打印"/>
+        <Button
+            android:id="@+id/ren_wo_yin_print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="报纸打印机-任我印"/>
+        <Button
+            android:id="@+id/win_box_print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大照片打印-WinBox"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/printerListTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30px"
+        android:layout_marginBottom="50px"
+        android:textColor="#f00"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <Button
+        android:id="@+id/btGetRemain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="相纸余量"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llt" />
+    <Button
+        android:id="@+id/getSerialNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="打印机序列号"
+        app:layout_constraintStart_toEndOf="@+id/btGetRemain"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

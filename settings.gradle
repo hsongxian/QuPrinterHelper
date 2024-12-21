@@ -1,0 +1,31 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://maven.aliyun.com/repository/public' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven {
+            name 'maven-snapshot'
+            url 'https://s01.oss.sonatype.org/content/repositories/snapshots/'
+        }
+        maven {
+            url "http://oss.sonatype.org/content/repositories/snapshots"
+            allowInsecureProtocol = true //
+        }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        mavenLocal()
+    }
+}
+
+rootProject.name = "PrinterHelper"
+include ':app'
+include ':lib_printer'

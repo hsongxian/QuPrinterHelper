@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="printer_connect_fail">列印機連接失敗，請聯繫客服</string>
+    <string name="print_success">打印成功，請及時取走照片</string>
+    <string name="ok">正常</string>
+    <string name="error">異常:%1$s</string>
+</resources>

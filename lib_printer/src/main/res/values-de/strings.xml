@@ -1,0 +1,6 @@
+<resources>
+    <string name="printer_connect_fail">Die Druckerverbindung ist fehlgeschlagen. Bitte wenden Sie sich an den Kundendienst</string>
+    <string name="print_success">Erfolgreich gedruckt, bitte nehmen Sie das Foto rechtzeitig mit</string>
+    <string name="ok">正常</string>
+    <string name="error">异常:%1$s</string>
+</resources>

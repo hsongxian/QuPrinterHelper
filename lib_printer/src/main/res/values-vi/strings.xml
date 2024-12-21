@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="printer_connect_fail">Máy in không kết nối được. Vui lòng liên hệ dịch vụ khách hàng</string>
+    <string name="print_success">In ấn thành công. Vui lòng lấy ảnh của bạn đúng thời hạn</string>
+    <string name="ok">OK</string>
+    <string name="error">Error:%1$s</string>
+</resources>
